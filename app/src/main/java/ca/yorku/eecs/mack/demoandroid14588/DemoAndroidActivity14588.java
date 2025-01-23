@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.Locale;
 
 /**
-test
+test, testing
  * Demo_Android  - with modifications by
  * Login ID      - shenice3
  * Student ID    - 219014588

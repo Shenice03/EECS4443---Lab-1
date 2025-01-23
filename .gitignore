@@ -29,3 +29,8 @@ app/build/intermediates/processed_res/debug/processDebugResources/out/resources-
 app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml
 app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml
 .gradle/5.4.1/executionHistory/executionHistory.bin
+.gradle/5.4.1/javaCompile/classAnalysis.bin
+.gradle/5.4.1/javaCompile/classAnalysis.bin
+app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+app/build/intermediates/javac/debug/classes/ca/yorku/eecs/mack/demoandroid14588/DemoAndroidActivity14588.class
+app/build/intermediates/transforms/dexBuilder/debug/0/ca/yorku/eecs/mack/demoandroid14588/DemoAndroidActivity14588.dex
