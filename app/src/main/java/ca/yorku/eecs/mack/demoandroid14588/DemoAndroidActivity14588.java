@@ -114,7 +114,7 @@ import java.util.Locale;
 public class DemoAndroidActivity14588 extends Activity implements OnClickListener {
     private final static String MYDEBUG = "MYDEBUG"; // for Log.i messages
 
-    private Button incrementButton, decrementButton, exitButton;
+    private Button incrementButton, decrementButton, exitButton, resetButton;
     private TextView textview;
     private int clickCount;
 
@@ -131,6 +131,7 @@ public class DemoAndroidActivity14588 extends Activity implements OnClickListene
         // get references to buttons and text view from the layout manager (rather than instantiate them)
         incrementButton = (Button) findViewById(R.id.incbutton);
         decrementButton = (Button) findViewById(R.id.decbutton);
+        resetButton = (Button) findViewById(R.id.resbutton);
         exitButton = (Button) findViewById(R.id.exitbutton);
         textview = (TextView) findViewById(R.id.textview);
 
@@ -138,6 +139,7 @@ public class DemoAndroidActivity14588 extends Activity implements OnClickListene
         // listener for the button clicks
         incrementButton.setOnClickListener(this); //use 'this' to handle clicks on increment button
         decrementButton.setOnClickListener(this); //use 'this' to handle clicks on decrement button
+        resetButton.setOnClickListener(this); //use 'this' to handle clicks on reset button
         exitButton.setOnClickListener(this); //use 'this' to handle clicks on exit button
 
         // initialize the click count
@@ -157,6 +159,11 @@ public class DemoAndroidActivity14588 extends Activity implements OnClickListene
         } else if (v == decrementButton) {
             Log.i(MYDEBUG, "Decrement button clicked!");
             --clickCount;
+
+        } else if (v == resetButton) {
+            Log.i(MYDEBUG, "Reset button clicked!");
+            // count resets to 0 when reset button is clicked
+            clickCount = 0;
 
         } else if (v == exitButton) {
             Log.i(MYDEBUG, "Good bye!");
